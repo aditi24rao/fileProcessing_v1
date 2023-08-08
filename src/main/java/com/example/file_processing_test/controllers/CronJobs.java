@@ -4,14 +4,13 @@ import com.example.file_processing_test.services.XmlFileProcessing;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.xml.bind.JAXBException;
 import java.io.IOException;
 
 @RestController
-public class BookController {
+public class CronJobs {
 
     @Value("${fileprocessing.dir-path.criticalxml}")
     private String critical_test;
